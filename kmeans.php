@@ -137,10 +137,9 @@ class KMeans{
             echo ("\e[94m" . "Cluster Ke: \t" . ($key+1) . "\n" );
             echo ("\e[37m" . "Pusat Awal: \t" . $init[$key] ." | Data Ke-" . ($this->dataKe[$key]+1) . "\n" );
             echo ("\e[37m" . "Pusat Akhir: \t" . $centroid[$key] . "\n" );
-            echo ("\e[92m" . "Data Ke: \t" .   $clusterIndex[$key] . "\n" );
-            echo ("\e[32m" . "Dataset: \t");
-            echo(implode("; ", $cd) );
-            echo("\n \n");
+            echo ("\e[92m" . "Data Ke: \t" .  $clusterIndex[$key] . "\n" );
+            echo ("\e[32m" . "Dataset: \t" . implode("; ", $cd) . "\n");
+            echo ("\n");
         }
     }
 }
