@@ -13,11 +13,11 @@ while(!$identical){
     $newCenter = $kmeans->newCentroid($data, $cluster);
     if ($oldCenter == $newCenter){
         $identical = true;
-        print_r($cluster);
+        $kmeans->printer($data, $cluster, $newCenter, $center);
+        //print_r($cluster);
     }
     else{
         $oldCenter = $newCenter;
-        echo "1 \n";
     } 
 }
 
